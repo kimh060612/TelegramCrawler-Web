@@ -1,5 +1,7 @@
 import { BehaviorSubject } from 'rxjs';
 import Router from 'next/router';
+import { useCookies } from 'react-cookie';
 
-import { Axios } from 'axios';
+async function login(username: string, password: string) {
 
+}
