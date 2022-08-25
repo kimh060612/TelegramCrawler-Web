@@ -19,16 +19,6 @@ const LoginContainer: NextPage<Props> = () => {
         <Layout>
             <div className="bg-white shadow-2xl rounded px-8 pt-6 pb-8 mb-4 flex flex-col w-screen max-w-sm sm:max-w-md">
                 <h3 className="text-gray-500 text-center uppercase font-bold mb-2">Login</h3>
-                <LoginInputContainer
-                    message="Enter your Email"
-                    onChange={}
-                    errorMessage={}
-                    required
-                    id="username"
-                    label="email"
-                    name="username"
-                    placeholder="Enter Your Email"
-                / >
 
             </div>
         </Layout>
