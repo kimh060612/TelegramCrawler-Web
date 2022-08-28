@@ -17,7 +17,6 @@ const LoginPage: NextPage<Props> = () => {
     const formOptions = { resolver: yupResolver(validationSchema) };
 
     const { register, handleSubmit, formState } = useForm(formOptions);
-    const { errors } = formState;
 
     
 
