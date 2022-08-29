@@ -1,6 +1,7 @@
 import {  
     AlexTableEntity,
-    MichaelTableEntity
+    MichaelTableEntity,
+    UserEntity
 } from './tables';
 import { DataSource } from 'typeorm';
 
@@ -13,7 +14,8 @@ const AppDataSource = new DataSource({
     database: 'happyic',
     entities: [
         AlexTableEntity,
-        MichaelTableEntity
+        MichaelTableEntity,
+        UserEntity
     ]
 });
 
