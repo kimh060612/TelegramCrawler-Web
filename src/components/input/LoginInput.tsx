@@ -3,7 +3,6 @@ import { NextPage } from 'next';
 interface Props {
     id: string;
     name: string;
-    onChange: (event: any) => void;
     label: string;
     message: string;
     errorMessage?: string;
@@ -19,7 +18,6 @@ const LoginInputContainer: NextPage<Props> = ({
     message,
     name,
     preValue,
-    onChange,
     max,
     placeholder,
     required,
@@ -36,7 +34,6 @@ const LoginInputContainer: NextPage<Props> = ({
                 className={`appearance-none shadow border ${errorMessage && 'border-red-500'} rounded w-full py-2 px-3 mb-2 text-gray-700`}
                 name={name}
                 type={type}
-                onChange={onChange}
                 defaultValue={preValue}
                 maxLength={max}
                 id={id}

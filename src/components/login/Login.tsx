@@ -23,6 +23,7 @@ const LoginContainer: NextPage<Props> = () => {
     });
     const formOptions = { resolver: yupResolver(validationSchema) };
     const { register, handleSubmit, formState } = useForm(formOptions);
+    const { errors } = formState;
 
     async function submitForm(username: string, password: string) {
         const data = await login(username, password);
@@ -33,7 +34,15 @@ const LoginContainer: NextPage<Props> = () => {
         <Layout>
             <div className="bg-white shadow-2xl rounded px-8 pt-6 pb-8 mb-4 flex flex-col w-screen max-w-sm sm:max-w-md">
                 <h3 className="text-gray-500 text-center uppercase font-bold mb-2">Login</h3>
-                
+                <LoginInputContainer
+                    message="Enter your Email"
+                    required
+                    id="username"
+                    label="Email"
+                    name="username"
+                    placeholder="Enter your email..."
+                    errorMessage=""
+                / >
             </div>
         </Layout>
     );
